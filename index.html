@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Se incluye la biblioteca Leaflet para la creación de mapas interactivos -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- enlace a la CDN de jQuery: Bootstrap los requiere para ciertas funcionalidades como los tooltips, dropdowns, y otros componentes interactivos. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- la CDN de Popper.js (necesaria para las posiciones de algunos elementos como los dropdowns) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Scripts de Bootstrap (requieren jQuery y Popper.js) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>App del Clima</title>
+</head>
+
+<body>
+  <div class="contenedor container-fluid">
+    <h1>App del Clima</h1>
+    <div id="alerta-container"></div>
+    <div class="input-group mb-3">
+      <input class="form-control"  type="text" id="ciudad" placeholder="Ingrese una ciudad">
+    </div>
+    <button class="btn btn-outline-success" id="buscar">Buscar</button>
+    <div class="clima card list-group" id="clima"></div>
+    <div class="hora btn btn-outline-light badge badge-warning" id="hora"></div>
+    <div class="mapa" id="mapa"></div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
