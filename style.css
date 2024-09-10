@@ -38,3 +38,19 @@ body {
   .mapa {
     height: 500px;
   }
+
+  .hora {
+    padding: 20px;
+    background-color: lightgray;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #333;
+    width: 300px;
+    margin: 50px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hora:hover {
+    background-color: #f0f0f0;
+}
